@@ -43,7 +43,7 @@ body::before {
 }
 
 .logo {
-  width: 250px; /* Tamaño predeterminado del logo */
+  width: 150px; /* Tamaño predeterminado del logo */
   height: auto; /* Mantén las proporciones */
 }
 
