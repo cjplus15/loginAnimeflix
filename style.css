@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Imagen de fondo */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.ibb.co/kq7ZKrN/watch-movies-online-free-website-tik-tok-online-movies-free-website-watch-free-movies-online-website.jpg') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -2;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Efecto oscuro */
+  z-index: -1;
+}
+
+/* Contenedor del logo */
+.logo-container {
+  margin-bottom: 20px; /* Espacio entre el logo y el cuadro */
+  text-align: center;
+  z-index: 1;
+}
+
+.logo {
+  width: 250px; /* Tamaño predeterminado del logo */
+  height: auto; /* Mantén las proporciones */
+}
+
+/* Puedes agregar una clase para cambiar el tamaño dinámicamente */
+.logo-small {
+  width: 80px; /* Tamaño más pequeño */
+}
+
+.logo-large {
+  width: 200px; /* Tamaño más grande */
+}
+
+/* Contenedor principal */
+.container {
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con transparencia al 80% */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  z-index: 1;
+}
+
+/* Títulos */
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Círculos alrededor de los textos */
+.toggle-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.toggle-text a {
+  color: orange;
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.toggle-text a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #444; /* Círculo gris oscuro */
+}
+
+.toggle-text a#show-register::before {
+  background-color: #f8b400; /* Círculo amarillo */
+}
+
+/* Inputs */
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+}
+
+/* Botones */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e65c00;
+}
